@@ -1,0 +1,15 @@
+gradio
+requests
+typing
+langgraph
+langchain-community
+langchain-google-genai
+langchain-huggingface
+langchain-openai
+langchain-google-community
+langchain-google-genai
+langchain-huggingface
+langchain-openai
+langchain-google-community
+wikipedia
+youtube-transcript-api
