@@ -50,12 +50,6 @@ builder.add_conditional_edges("assistant", tools_condition)
 
 The agent employs a sophisticated graph-based architecture where the LLM can dynamically choose appropriate tools based on the question context, execute them, and integrate results into the final answer.
 
-## Agent Workflow
-
-![Agent Workflow](readme_docs/agent_workflow.png)
-
-The agent follows a structured workflow from question intake through tool execution to final answer submission. The conditional execution flow allows for dynamic tool selection and iterative refinement of responses.
-
 ## Project Structure
 
 - `app.py` - Main agent implementation and Gradio interface
