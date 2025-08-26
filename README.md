@@ -37,26 +37,6 @@ The agent leverages six specialized tools, each designed for specific data sourc
 - **State Management**: Robust conversation state handling using TypedDict and message annotations
 - **Async Processing**: Handles multiple questions with configurable delays and retries
 
-## Architecture Highlights
-
-```python
-# Agent uses LangGraph for sophisticated control flow
-class AgentState(TypedDict):
-    messages: Annotated[list[AnyMessage], add_messages]
-
-# Tools are bound to LLM with conditional execution
-builder.add_conditional_edges("assistant", tools_condition)
-```
-
-The agent employs a sophisticated graph-based architecture where the LLM can dynamically choose appropriate tools based on the question context, execute them, and integrate results into the final answer.
-
-## Project Structure
-
-- `app.py` - Main agent implementation and Gradio interface
-- `tools.py` - Custom tool implementations (search, file processing, etc.)  
-- `requirements.txt` - Python dependencies
-- `readme_docs/` - Additional documentation assets
-
 ## Skills Demonstrated
 
 - **AI Agent Development**: End-to-end agent design and implementation
